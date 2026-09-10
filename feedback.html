@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback — PennyTrailTracker</title>
+<meta name="description" content="Report a bug, request a feature, or leave a review for PennyTrailTracker.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <img src="assets/icon.png" alt="">
+    <span class="site-header__name">PennyTrailTracker</span>
+    <nav class="site-header__nav">
+      <a href="index.html">All topics</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <span class="eyebrow">Feedback</span>
+  <h1>Tell us what's working — and what isn't</h1>
+  <p class="page-subtitle">Bug reports, feature requests, and general feedback all help shape where PennyTrailTracker goes next.</p>
+
+  <div class="toc">
+    <a href="mailto:support@yourdomain.com">
+      <span class="toc-icon">✉️</span>
+      <span>Email support</span>
+    </a>
+    <a href="#" onclick="return false;">
+      <span class="toc-icon">🐞</span>
+      <span>Report a bug</span>
+    </a>
+    <a href="#" onclick="return false;">
+      <span class="toc-icon">💡</span>
+      <span>Request a feature</span>
+    </a>
+    <a href="#" onclick="return false;">
+      <span class="toc-icon">⭐</span>
+      <span>Rate the app</span>
+    </a>
+  </div>
+
+  <div class="callout callout--danger">
+    <strong>For maintainers:</strong> the tiles above are placeholders. Point the email tile at a real inbox, and either wire the bug/feature tiles to a form (e.g. a hosted form service) or swap them for direct links to your app-store listing / issue tracker. The in-app Feedback button already opens a lightweight rating prompt — this page is the fuller, browser-based equivalent.
+  </div>
+
+  <h2>Before you write in</h2>
+  <ul>
+    <li>Check the <a href="faq.html">FAQ</a> — your question might already be answered there.</li>
+    <li>For bugs, include your device, OS version, and app version (found on the About screen) — it saves a round-trip.</li>
+    <li>Screenshots or screen recordings make a huge difference for visual issues.</li>
+  </ul>
+
+  <h2>What we can't help with here</h2>
+  <p class="muted">This page is for the app itself. For account-specific data requests (export, deletion) — see the <a href="privacy-policy.html">Privacy Policy</a> for how to do that directly from the app.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>© <span id="year"></span> PennyTrailTracker</span>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms-of-use.html">Terms</a>
+    <a href="licenses.html">Licenses</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

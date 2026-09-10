@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PennyTrailTracker Support</title>
+<meta name="description" content="Help, guides, and policies for PennyTrailTracker.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <img src="assets/icon.png" alt="">
+    <span class="site-header__name">PennyTrailTracker</span>
+  </div>
+</header>
+
+<main>
+  <span class="eyebrow">Support Center</span>
+  <h1>Everything about PennyTrailTracker, in one place</h1>
+  <p class="page-subtitle">Guides, answers, policies, and release notes — kept up to date here so you don't have to wait for an app update to see the latest info.</p>
+
+  <div class="toc">
+    <a href="faq.html">
+      <span class="toc-icon">❓</span>
+      <span>Guide &amp; FAQ</span>
+    </a>
+    <a href="onboarding.html">
+      <span class="toc-icon">🚪</span>
+      <span>Getting Started</span>
+    </a>
+    <a href="feedback.html">
+      <span class="toc-icon">💬</span>
+      <span>Feedback</span>
+    </a>
+    <a href="changelog.html">
+      <span class="toc-icon">📋</span>
+      <span>Changelog</span>
+    </a>
+    <a href="privacy-policy.html">
+      <span class="toc-icon">🔒</span>
+      <span>Privacy Policy</span>
+    </a>
+    <a href="terms-of-use.html">
+      <span class="toc-icon">📄</span>
+      <span>Terms of Use</span>
+    </a>
+    <a href="licenses.html">
+      <span class="toc-icon">⚖️</span>
+      <span>Licenses &amp; Legal</span>
+    </a>
+  </div>
+
+  <div class="callout" style="margin-top: 40px;">
+    <strong>For maintainers:</strong> each page here is a standalone, self-contained HTML file with no build step — edit the content directly and re-upload just that one file to update it, without shipping a new app release. Every page shares <span class="placeholder">assets/style.css</span> and <span class="placeholder">assets/icon.png</span>, so branding stays consistent automatically. Deploy this whole folder to any static host, keeping the relative paths intact.
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>© <span id="year"></span> PennyTrailTracker</span>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms-of-use.html">Terms</a>
+    <a href="licenses.html">Licenses</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

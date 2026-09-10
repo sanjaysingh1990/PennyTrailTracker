@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guide &amp; FAQ — PennyTrailTracker</title>
+<meta name="description" content="Answers to common questions about using PennyTrailTracker.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <img src="assets/icon.png" alt="">
+    <span class="site-header__name">PennyTrailTracker</span>
+    <nav class="site-header__nav">
+      <a href="index.html">All topics</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <span class="eyebrow">Guide &amp; FAQ</span>
+  <h1>Frequently asked questions</h1>
+  <p class="page-subtitle">Short answers for the questions we hear most. Can't find yours? Reach out from the <a href="feedback.html">Feedback</a> page.</p>
+
+  <h2>Getting started</h2>
+
+  <details class="faq-item" open>
+    <summary>How do I add my first transaction?</summary>
+    <p>Tap the <strong>+</strong> button on the Home screen, enter an amount, pick a category, and save. You can also scan a receipt or paste text from an SMS/email and let AI fill in the details for you — see the next question.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>What does the AI receipt scanner actually do?</summary>
+    <p>Take a photo of a receipt (or paste raw text from a bank SMS or email), and PennyTrailTracker extracts the merchant, amount, category, and date automatically. If several receipts are scanned at once, they're staged in a review screen so you can check and adjust each one before they're added. When you're offline, a small on-device model handles it instead of the cloud — nothing blocks you from logging a transaction just because you don't have a connection.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Can I track more than one currency or account?</summary>
+    <p>Yes. Add as many accounts (wallets) as you need, each with its own currency, and PennyTrailTracker converts everything to your primary currency for totals like Net Worth and All Spending. Exchange rates are refreshed automatically.</p>
+  </details>
+
+  <h2>Budgets, goals &amp; bills</h2>
+
+  <details class="faq-item">
+    <summary>How do budgets work?</summary>
+    <p>Create a budget with an amount and a period (weekly, monthly, custom range, etc.), optionally scoped to specific categories or accounts. The Home and Budgets screens show live progress, and you'll see a clear "over budget" state once you cross the limit.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>What's the difference between a Goal and a Loan?</summary>
+    <p>Goals track money you're saving toward something (an emergency fund, a trip). Loans track money you owe or are owed, with a running balance that moves as you log payments.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Can PennyTrailTracker remind me about upcoming or overdue bills?</summary>
+    <p>Yes — mark a transaction as recurring or scheduled and it shows up under Scheduled Transactions, with notifications if you've enabled them for the app.</p>
+  </details>
+
+  <h2>Data &amp; privacy</h2>
+
+  <details class="faq-item">
+    <summary>Is my financial data private?</summary>
+    <p>Your transactions stay on your device by default. If you use the AI receipt scanner's cloud tier, only the text you're scanning (or, for the Daily AI Summary, aggregate totals — never individual transaction details) is sent for processing, and nothing is stored beyond generating that one response. See the full <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Can I back up or export my data?</summary>
+    <p>Yes — export to CSV at any time from Settings, or turn on cloud backup to sync across devices. You can also erase all local and cloud data from the About screen if you ever want a clean start.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Does the app work offline?</summary>
+    <p>Yes. Adding, editing, and browsing transactions all work fully offline. The only features that benefit from a connection are cloud AI scanning (which falls back to an on-device model) and cloud backup/sync.</p>
+  </details>
+
+  <h2>Customization</h2>
+
+  <details class="faq-item">
+    <summary>Can I rearrange or hide sections on the Home screen?</summary>
+    <p>Yes — open the <strong>⋮</strong> menu on Home and choose "Edit Home" to show, hide, and drag-reorder every section, including the Daily AI Summary card.</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Can I change the app's theme or accent color?</summary>
+    <p>Yes, under Settings &amp; Customization — light/dark/system theme, accent color, font, and number formatting are all adjustable there.</p>
+  </details>
+
+  <div class="callout" style="margin-top: 40px;">
+    Still stuck? Tell us what's wrong on the <a href="feedback.html">Feedback</a> page — the more specific, the faster we can help.
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>© <span id="year"></span> PennyTrailTracker</span>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms-of-use.html">Terms</a>
+    <a href="licenses.html">Licenses</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

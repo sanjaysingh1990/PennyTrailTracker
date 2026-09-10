@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — PennyTrailTracker</title>
+<meta name="description" content="How PennyTrailTracker handles your data.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <img src="assets/icon.png" alt="">
+    <span class="site-header__name">PennyTrailTracker</span>
+    <nav class="site-header__nav">
+      <a href="index.html">All topics</a>
+    </nav>
+  </div>
+</header>
+
+<main class="legal">
+  <span class="eyebrow">Legal</span>
+  <h1>Privacy Policy</h1>
+  <div class="updated-badge">Last updated: <span class="placeholder">[Month DD, YYYY]</span></div>
+
+  <div class="callout callout--danger">
+    <strong>For maintainers — read before publishing:</strong> this is a structurally complete draft grounded in what the app actually does, not a finished legal document. Fill in every <span class="placeholder">[bracketed placeholder]</span>, remove sections that don't apply, and have it reviewed by a lawyer for your actual jurisdiction and user base (data-protection requirements differ significantly between regions, e.g. GDPR in the EU/UK, CCPA in California) before this is relied on as your real policy.
+  </div>
+
+  <p>This policy explains what information PennyTrailTracker ("the app", "we", "us") collects, how it's used, and the choices you have. PennyTrailTracker is built to be local-first: your financial data lives on your device unless you explicitly turn on a feature that sends it elsewhere.</p>
+
+  <h2>Information stored on your device</h2>
+  <p>Transactions, accounts, budgets, goals, categories, and settings are stored locally on your device by default. We don't have access to this data unless you enable cloud backup.</p>
+
+  <h2>Information you choose to share</h2>
+  <table class="legal-table">
+    <thead>
+      <tr><th>Feature</th><th>What's sent</th><th>Where it goes</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Receipt / SMS scanning (cloud tier)</td>
+        <td>The raw text or photo you're scanning</td>
+        <td>A cloud AI provider, to extract transaction details. Not stored beyond generating that response.</td>
+      </tr>
+      <tr>
+        <td>Receipt / SMS scanning (offline tier)</td>
+        <td>Nothing leaves your device</td>
+        <td>Processed entirely on-device</td>
+      </tr>
+      <tr>
+        <td>Daily AI Summary</td>
+        <td>Aggregate totals only (e.g. "spent $X this month") — never individual transaction titles, notes, or merchant names</td>
+        <td>A cloud AI provider, to generate your summary text. Falls back to on-device or a static tip if unavailable.</td>
+      </tr>
+      <tr>
+        <td>Cloud backup / sync (if enabled)</td>
+        <td>Your full transaction and account data</td>
+        <td>Our backend, so it can sync across your devices</td>
+      </tr>
+      <tr>
+        <td>Crash &amp; diagnostic reports (if enabled)</td>
+        <td>Device type, OS version, and the error itself</td>
+        <td><span class="placeholder">[your crash-reporting provider, e.g. Firebase Crashlytics]</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Third-party services we use</h2>
+  <ul>
+    <li><span class="placeholder">[Cloud AI provider, e.g. Google Gemini via Firebase AI Logic]</span> — for cloud-tier receipt scanning and the Daily AI Summary.</li>
+    <li><span class="placeholder">[Backend provider, e.g. Firebase (Firestore, Authentication, App Check)]</span> — for account sign-in and optional cloud backup.</li>
+    <li><span class="placeholder">[Exchange-rate data provider]</span> — for currency conversion.</li>
+  </ul>
+  <p class="muted">Each of these providers processes data under their own privacy terms in addition to this policy. <span class="placeholder">[Link to each provider's policy here.]</span></p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>We don't sell your data.</li>
+    <li>We don't use your transaction data for advertising.</li>
+    <li>We don't read your data outside of what a feature you've explicitly enabled requires.</li>
+  </ul>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li><strong>Export:</strong> export all your data to CSV at any time from Settings.</li>
+    <li><strong>Delete:</strong> erase all local data — and, if you've used cloud backup, your cloud data too — from About → Delete All Data.</li>
+    <li><strong>Opt out of cloud AI:</strong> the offline model handles scanning and summaries with nothing leaving your device, at reduced accuracy.</li>
+    <li><strong>Notifications:</strong> can be turned off entirely from your device's system settings.</li>
+  </ul>
+
+  <h2>Data retention</h2>
+  <p><span class="placeholder">[Describe how long cloud-backed data is retained after a user deletes their account, and how long crash/diagnostic logs are kept.]</span></p>
+
+  <h2>Children's privacy</h2>
+  <p>PennyTrailTracker is not directed at children under <span class="placeholder">[13 / 16, per your jurisdiction]</span>, and we do not knowingly collect data from them.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes materially, we'll update the "Last updated" date above and, where required, notify you in the app.</p>
+
+  <h2>Contact us</h2>
+  <p>Questions about this policy or your data: <a href="mailto:support@yourdomain.com" class="placeholder">support@yourdomain.com</a></p>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>© <span id="year"></span> PennyTrailTracker</span>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms-of-use.html">Terms</a>
+    <a href="licenses.html">Licenses</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

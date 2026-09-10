@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Getting Started — PennyTrailTracker</title>
+<meta name="description" content="A quick walkthrough of setting up PennyTrailTracker for the first time.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <img src="assets/icon.png" alt="">
+    <span class="site-header__name">PennyTrailTracker</span>
+    <nav class="site-header__nav">
+      <a href="index.html">All topics</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <span class="eyebrow">Getting Started</span>
+  <h1>Set up PennyTrailTracker in five minutes</h1>
+  <p class="page-subtitle">The same walkthrough you'll see the first time you open the app — handy to revisit any time, or to send to someone just getting started.</p>
+
+  <ol class="step-list">
+    <li>
+      <h3>Try it with sample data first (optional)</h3>
+      <p>On the welcome screen, tap <strong>Preview Demo</strong> to explore the app with realistic sample transactions, budgets, and goals already filled in — no setup required, and nothing is saved permanently.</p>
+    </li>
+    <li>
+      <h3>Add your first account</h3>
+      <p>An account (or "wallet") represents a real bank account, card, or cash balance. Give it a name, starting balance, and currency. You can add more later — one per account, card, or currency you want to track separately.</p>
+    </li>
+    <li>
+      <h3>Set up your categories</h3>
+      <p>PennyTrailTracker comes with a full set of everyday categories (Groceries, Dining, Transit, and more). Rename, reorder, or add your own from Settings → Categories at any time.</p>
+    </li>
+    <li>
+      <h3>Log a transaction</h3>
+      <p>Tap the <strong>+</strong> button. Enter it manually, or scan a receipt / paste text from a bank SMS and let AI fill in the amount, merchant, and category for you.</p>
+    </li>
+    <li>
+      <h3>Create your first budget</h3>
+      <p>Head to the Budgets tab and set a spending limit for a category or time period — Home will keep you posted on progress automatically.</p>
+    </li>
+    <li>
+      <h3>Personalize Home</h3>
+      <p>Open the <strong>⋮</strong> menu on Home → <strong>Edit Home</strong> to show, hide, and reorder sections — net worth, budgets, spending graphs, the Daily AI Summary card, and more — until it matches how you actually want to check in.</p>
+    </li>
+  </ol>
+
+  <div class="callout" style="margin-top: 8px;">
+    You can replay this intro from the app any time: <strong>More → About → View App Intro</strong>.
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>© <span id="year"></span> PennyTrailTracker</span>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms-of-use.html">Terms</a>
+    <a href="licenses.html">Licenses</a>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

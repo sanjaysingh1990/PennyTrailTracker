@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Licenses &amp; Legal — PennyTrailTracker</title>
+<meta name="description" content="Open-source attributions and legal notices for PennyTrailTracker.">
+<link rel="icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <img src="assets/icon.png" alt="">
+    <span class="site-header__name">PennyTrailTracker</span>
+    <nav class="site-header__nav">
+      <a href="index.html">All topics</a>
+    </nav>
+  </div>
+</header>
+
+<main class="legal">
+  <span class="eyebrow">Legal</span>
+  <h1>Licenses &amp; Legalese</h1>
+  <div class="updated-badge">App version: <span class="placeholder">[synced from app]</span></div>
+
+  <div class="callout callout--danger">
+    <strong>For maintainers:</strong> the in-app version of this page (About → View Licenses and Legalese) lists every open-source package straight from the app's own dependency tree via Flutter's built-in license viewer — that list changes as dependencies change, so keep this page as a lighter, human-curated summary rather than trying to mirror it exactly line-for-line.
+  </div>
+
+  <h2>Built on Cashew</h2>
+  <p>PennyTrailTracker is a fork of <a href="https://github.com/jameskokoska/Cashew" target="_blank" rel="noopener">Cashew</a>, an open-source budget tracking app, originally distributed under the MIT license. Our thanks to the original author and contributors.</p>
+
+  <div class="callout callout--danger">
+    <strong>For maintainers:</strong> this repository's own <span class="placeholder">LICENSE</span> file is Apache License 2.0, distinct from upstream Cashew's MIT license. Combining/relicensing a modified MIT-licensed work is generally permitted, but MIT requires the original copyright notice to be retained — have this reviewed to confirm the attribution below is sufficient before treating it as final.
+  </div>
+
+  <h2>License</h2>
+  <p>PennyTrailTracker's own source is licensed under the <a href="https://github.com/sanjaysingh1990/PennyTrailTracker/blob/main/LICENSE" target="_blank" rel="noopener">Apache License 2.0</a>. Portions derived from Cashew remain copyright © the Cashew contributors under the MIT license below.</p>
+  <div class="card">
+    <p style="margin: 0 0 8px; font-size: 0.85rem;">MIT License — Cashew (portions)</p>
+    <p style="margin: 0; font-size: 0.85rem;">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, subject to the following conditions: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+  </div>
+
+  <h2>Exchange rate data</h2>
+  <p><span class="placeholder">[Name your exchange-rate data provider and its attribution/license terms here — copy the exact wording the app already shows under About → Licenses, which pulls from your "exchange-rate-notice-description" translation string.]</span></p>
+
+  <h2>Key open-source packages</h2>
+  <p class="muted">A short, human-readable list of the major libraries PennyTrailTracker is built on. See the in-app license viewer for the complete, auto-generated list.</p>
+  <table class="legal-table">
+    <thead><tr><th>Package</th><th>Purpose</th><th>License</th></tr></thead>
+    <tbody>
+      <tr><td>Flutter</td><td>App framework</td><td>BSD-3-Clause</td></tr>
+      <tr><td>Firebase (core, AI Logic, App Check)</td><td>Backend, cloud AI</td><td>Apache-2.0</td></tr>
+      <tr><td>flutter_gemma</td><td>On-device AI fallback</td><td>Apache-2.0</td></tr>
+      <tr><td>Drift</td><td>Local database</td><td>MIT</td></tr>
+      <tr><td colspan="3" class="placeholder">[Add any other packages worth crediting by name]</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Trademarks</h2>
+  <p>"PennyTrailTracker" and the PennyTrailTracker icon are <span class="placeholder">[trademarks of / used by]</span> <span class="placeholder">[Your name / legal entity]</span>. All other trademarks are property of their respective owners.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>© <span id="year2"></span> PennyTrailTracker</span>
+    <a href="privacy-policy.html">Privacy</a>
+    <a href="terms-of-use.html">Terms</a>
+    <a href="licenses.html">Licenses</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('year2').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
