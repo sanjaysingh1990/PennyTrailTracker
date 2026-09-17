@@ -23,18 +23,10 @@
 <main class="legal">
   <span class="eyebrow">Legal</span>
   <h1>Licenses &amp; Legalese</h1>
-  <div class="updated-badge">App version: <span class="placeholder">[synced from app]</span></div>
-
-  <div class="callout callout--danger">
-    <strong>For maintainers:</strong> the in-app version of this page (About → View Licenses and Legalese) lists every open-source package straight from the app's own dependency tree via Flutter's built-in license viewer — that list changes as dependencies change, so keep this page as a lighter, human-curated summary rather than trying to mirror it exactly line-for-line.
-  </div>
+  <div class="updated-badge">App version: 1.0.0</div>
 
   <h2>Built on Cashew</h2>
   <p>PennyTrailTracker is a fork of <a href="https://github.com/jameskokoska/Cashew" target="_blank" rel="noopener">Cashew</a>, an open-source budget tracking app, originally distributed under the MIT license. Our thanks to the original author and contributors.</p>
-
-  <div class="callout callout--danger">
-    <strong>For maintainers:</strong> this repository's own <span class="placeholder">LICENSE</span> file is Apache License 2.0, distinct from upstream Cashew's MIT license. Combining/relicensing a modified MIT-licensed work is generally permitted, but MIT requires the original copyright notice to be retained — have this reviewed to confirm the attribution below is sufficient before treating it as final.
-  </div>
 
   <h2>License</h2>
   <p>PennyTrailTracker's own source is licensed under the <a href="https://github.com/sanjaysingh1990/PennyTrailTracker/blob/main/LICENSE" target="_blank" rel="noopener">Apache License 2.0</a>. Portions derived from Cashew remain copyright © the Cashew contributors under the MIT license below.</p>
@@ -44,7 +36,7 @@
   </div>
 
   <h2>Exchange rate data</h2>
-  <p><span class="placeholder">[Name your exchange-rate data provider and its attribution/license terms here — copy the exact wording the app already shows under About → Licenses, which pulls from your "exchange-rate-notice-description" translation string.]</span></p>
+  <p>Currency conversion is powered by <a href="https://github.com/fawazahmed0/exchange-api" target="_blank" rel="noopener">@fawazahmed0/currency-api</a>, a free, openly-licensed public exchange-rate API. The exchange rates displayed within this app are for informational purposes only and should not be used for investment decisions. These rates are estimates and may not reflect actual rates. By using this app, you acknowledge that you understand and accept these limitations and that you assume full responsibility for any decisions made based on the information provided within the app.</p>
 
   <h2>Key open-source packages</h2>
   <p class="muted">A short, human-readable list of the major libraries PennyTrailTracker is built on. See the in-app license viewer for the complete, auto-generated list.</p>
@@ -52,29 +44,28 @@
     <thead><tr><th>Package</th><th>Purpose</th><th>License</th></tr></thead>
     <tbody>
       <tr><td>Flutter</td><td>App framework</td><td>BSD-3-Clause</td></tr>
-      <tr><td>Firebase (core, AI Logic, App Check)</td><td>Backend, cloud AI</td><td>Apache-2.0</td></tr>
+      <tr><td>Firebase (core, AI Logic, App Check, Auth, Firestore)</td><td>Backend, sign-in, cloud AI</td><td>Apache-2.0</td></tr>
       <tr><td>flutter_gemma</td><td>On-device AI fallback</td><td>Apache-2.0</td></tr>
+      <tr><td>Google ML Kit Text Recognition</td><td>Receipt scanning (OCR)</td><td>Apache-2.0</td></tr>
+      <tr><td>Google Mobile Ads (AdMob)</td><td>Ads on the Free plan</td><td>Apache-2.0</td></tr>
+      <tr><td>Google Sign-In</td><td>Account sign-in</td><td>Apache-2.0</td></tr>
       <tr><td>Drift</td><td>Local database</td><td>MIT</td></tr>
-      <tr><td colspan="3" class="placeholder">[Add any other packages worth crediting by name]</td></tr>
     </tbody>
   </table>
 
   <h2>Trademarks</h2>
-  <p>"PennyTrailTracker" and the PennyTrailTracker icon are <span class="placeholder">[trademarks of / used by]</span> <span class="placeholder">[Your name / legal entity]</span>. All other trademarks are property of their respective owners.</p>
+  <p>"PennyTrailTracker" and the PennyTrailTracker icon are used by Sanjay Singh. All other trademarks are property of their respective owners.</p>
 </main>
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <span>© <span id="year2"></span> PennyTrailTracker</span>
+    <span>© <span id="year"></span> PennyTrailTracker</span>
     <a href="privacy-policy.html">Privacy</a>
     <a href="terms-of-use.html">Terms</a>
     <a href="licenses.html">Licenses</a>
   </div>
 </footer>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  document.getElementById('year2').textContent = new Date().getFullYear();
-</script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
